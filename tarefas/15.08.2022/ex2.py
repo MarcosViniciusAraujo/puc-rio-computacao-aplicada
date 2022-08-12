@@ -4,8 +4,7 @@ Author: @Marcos_Vinicius_Araujo
 created_at: 11/08/2022
 '''
 
-from cmath import sqrt
-from unittest import result
+from math import sqrt
 
 
 def areaRetangulo(l1, l2):
