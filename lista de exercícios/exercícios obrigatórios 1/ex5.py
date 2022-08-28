@@ -56,3 +56,5 @@ for pessoa, bets in aposta.items():
     for i,bet in enumerate(bets):
         is_winner = check_winner(bet, GABARITO)
         print(f"Aposta #{i + 1}: {is_winner}")
+        
+        
