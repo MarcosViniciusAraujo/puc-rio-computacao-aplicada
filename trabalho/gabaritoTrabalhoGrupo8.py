@@ -48,7 +48,7 @@ print("\n-----------------------------------------------------")
 print("\n 2) Substitua os valores ausentes da coluna  Rocket por '0'. \n\
 Como outra forma de tratamento, exclua as linhas onde o valor de Rocket é ausente. \n")
 
-raw['Rocket'] = raw['Rocket'].fillna(0)
+#raw['Rocket'] = raw['Rocket'].fillna(0)
 raw['Location'] = raw['Location'].fillna('Location Unknown')
 
 
@@ -93,6 +93,12 @@ print(raw.loc[f3].head())
 print(raw.loc[fc].head())
 
 
+print('Média de missões com sucesso: {:.2f}'.format(
+        raw[f3].mean()['Rocket']
+        )
+    )
+
+
 print("\n-----------------------------------------------------")
 
 print("\n-----------------------------------------------------")
@@ -134,6 +140,7 @@ print("\n 8) a. Quanto foi gasto para a construção de todos os foguetes da bas
 \tc. Qual é o custo médio e a soma de todos os custos dos foguetes que resultaram em uma missão bem sucedida, por nome de companhia? \n")
 
 print(f"Gasto total: {raw['Rocket'].sum()}")
+
 print(f"Gasto médio: {raw['Rocket'].mean()}")
 
 
